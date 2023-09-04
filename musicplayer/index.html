@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4074b6dd70.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Audio Player</title>
+  </head>
+  <body>
+    <div class="app" style="padding:0px;background-color:white;border-radius: 0.5rem;">
+      <div class="song-info" style="min-height:unset;display:block;position:relative">
+        <img
+          src="https://i.pinimg.com/564x/1b/c6/5a/1bc65a846f0f71d7869bea48485b65c3.jpg"
+          alt=""
+          style="width:100%;border-radius:unset"
+        />
+        <div class="player" style="position: absolute;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  margin: auto;">
+          <div>
+            <input type="range" style="
+      height: 0.125rem;
+      border-radius: 0.25rem;
+      cursor: pointer;"/>
+            <div></div>
+          </div>
+          <span class="span-start">start</span>
+          <span class="span-end">end</span>
+        </div>
+
+      </div>
+
+
+      <div class="details_body__info" style="padding-top: 1.5rem;
+    padding-bottom: 1.25rem;
+    text-align: center;">
+            <div class="info__album" style="font-size: 0.85rem;
+    font-weight: 300;
+    color: #666;">البوم سهران</div>
+
+            <div class="info__song" style="font-size: 2.15rem;
+    font-weight: 400;
+    color: #d30320;">زي مانتِي</div>
+
+            <div class="info__artist" style="font-size: 0.85rem;
+    font-weight: 300;
+    color: #666;">عمرو دياب</div>
+      </div>
+
+      <div class="player-control">
+          <a style="margin-right:20px;font-size: 0.8rem;
+    color: #212121;
+    opacity: 0.5;
+    padding-top: 0.45rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.45rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
+        transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);">
+              <i class="fa fa-step-backward" id="backward" style="    color: #212121;
+          opacity: 0.5;"></i>
+          </a>
+
+
+        <!-- <i class="fas fa-play" id="play-pause" style="color:rgba(211, 3, 32, 0.95)"></i> -->
+
+        <a style="    padding-top: 0.82rem;
+    padding-right: 1rem;
+    padding-bottom: 0.82rem;
+    padding-left: 1.19rem;
+    font-size: 1.25rem;
+    color: rgba(211, 3, 32, 0.95);
+    border-radius: 50%;
+box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
+    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);">
+            <i class="fa fa-play" id="play-pause"></i>
+        </a>
+
+
+        <a style="margin-left:20px;font-size: 0.8rem;
+  color: #212121;
+  opacity: 0.5;
+  padding-top: 0.45rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.45rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(33, 33, 33, 0.1), 0 3px 12px rgba(33, 33, 33, 0.15);
+      transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);">
+            <i class="fa fa-step-forward" id="forward" style="    color: #212121;
+        opacity: 0.5;"></i>
+        </a>
+
+
+      </div>
+      <div class="sound-control">
+        <i class="fas fa-volume-down"></i>
+        <input type="range" max="100" step="1" />
+        <i class="fas fa-volume-up"></i>
+      </div>
+      <audio src="/Users/raedbaker/Downloads/test123.mp3"></audio>
+    </div>
+    <script src="./scripts/songs.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
